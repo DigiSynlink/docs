@@ -1,0 +1,21 @@
+name: ci 
+on:
+  push:
+    branches:
+      - master 
+      - main
+jobs:
+  deploy:
+    strategy:
+        matrix:
+          nix:
+            - name: 2.10.3
+              url: https://releases.nixos.org/nix/nix-2.10.3/install
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.0.2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material  mkdocs-material-extensions
+      - run: mkdocs gh-deploy --force
