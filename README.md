@@ -2,6 +2,19 @@
 
 Build with mkdocs
 
+## Virtual Environment
+
+### Create 
+
+```bash
+python3 -m venv venv
+```
+### Enter
+
+```bash
+source venv/bin/activate
+```
+
 ## Env
 
 ```bash

@@ -2,3 +2,4 @@
 dist
 venv/
 site/
+.DS_Store

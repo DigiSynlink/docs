@@ -1,5 +1,5 @@
 ---
-title: Digitsynlink Software Download
+title: GUI Software Download
 ---
 
 ### 2.1.2 
